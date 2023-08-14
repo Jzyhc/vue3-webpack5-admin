@@ -15,6 +15,7 @@
 | ├── webpack.base.js # 公共配置
 | ├── webpack.dev.js # 开发环境配置
 | └── webpack.prod.js # 打包环境配置
+| └── webpack.analy.js # 构建耗时分析配置
 ├── public
 │ └── index.html # html 模板
 ├── src
@@ -66,3 +67,24 @@ npm i babel-loader @babel/core @babel/preset-env core-js -D
 
 安装复制静态文件插件
 npm i copy-webpack-plugin -D
+
+构建耗时分析
+npm i speed-measure-webpack-plugin -D
+
+开启多线程loader
+npm i thread-loader -D
+
+抽取css样式文件
+npm i mini-css-extract-plugin -D
+
+压缩css
+npm i css-minimizer-webpack-plugin -D
+
+压缩js
+npm i terser-webpack-plugin -D
+
+tree-shaking清理未使用css
+npm i purgecss-webpack-plugin glob-all -D
+
+生成 gzip
+npm i compression-webpack-plugin -D
